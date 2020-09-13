@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>
+            Alvin's favourite shows
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Shows</li>
+            </ol>
+          </nav>
+        <h1>Welcome to Alvin's favourite shows</h1>
+        <p style="font-size: x-small; text-align: right;">
+            Styled using bootstrap</p>
+        <p style="color:darkcyan; font-weight: bold;">This section displays all shows that Alvin loves. <br>Choose and view details of a particular show using the dropdown below.</p>
+        
+        <select class="form-control" id="exampleFormControlSelect1" onchange="changedescrip(this.value)">
+            <option></option>
+            <option value="theboys">The Boys</option>
+            <option value="wolf">Spice and Wolf</option>
+            <option value="office">The Office</option>
+            <option value="randc">Rick And Morty</option>
+        </select>
+        <br>
+        <br>
+        <div id="description">Select one of the options to see the description</div>      
+        <script src="shows.js">
+        </script>
+    </body>
+</html>
+

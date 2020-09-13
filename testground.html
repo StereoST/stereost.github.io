@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>
+            Javascript test ground
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <script src="testground.js"></script>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Test Ground</li>
+            </ol>
+          </nav>
+        <h1>Welcome to Alvin's Javascript testing ground</h1>
+
+        <p style="font-size: x-small; text-align: right;">
+            Styled using bootstrap</p>
+        
+        <p>Submit some text here</p>
+        <form onsubmit="changetext(); return false;">
+            <input id="text" type="text">
+            <input type="submit">
+        </form>
+        <br>
+
+        <div id='variabletext'>Here's some text</div>
+
+        <br>
+        <button type="button" class="btn btn-outline-danger" id='red' onclick="changecolor(id)">Change text color</button>
+        <button type="button" class="btn btn-outline-success" id='green' onclick="changecolor(id)">Change text color</button>
+        <button type="button" class="btn btn-outline-info" id='blue' onclick="changecolor(id)">Change text color</button>
+
+        
+    </body>
+</html>
+
